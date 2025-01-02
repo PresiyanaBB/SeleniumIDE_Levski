@@ -34,6 +34,13 @@
       ],
       "value": ""
     }, {
+      "id": "be47976a-9dbf-4c4c-88a4-cb0c8da083da",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "64fbdeb2-b92d-439e-a8d7-3230c4cbb38d",
       "comment": "",
       "command": "executeScript",
@@ -47,6 +54,74 @@
       "target": "pageurl",
       "targets": [],
       "value": "https://fanshop.levski.bg/"
+    }]
+  }, {
+    "id": "5f11865a-2ed5-430c-8eda-cabeac5af937",
+    "name": "search-with-valid-input-returns-results",
+    "commands": []
+  }, {
+    "id": "0b60b3ae-9c83-4dc2-83a1-a89a983212db",
+    "name": "search-with-invalid-input-returns-empty-results",
+    "commands": [{
+      "id": "e821af00-91b7-46d8-a2d6-90bc479e2acc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f357285b-915f-4795-81a2-3dc13d326943",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0a4e5f6-8ab4-4feb-a5cf-e9a1784529c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "932a9f24-26c4-4188-bf31-61eb7c1f535b",
+      "comment": "",
+      "command": "type",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "00000000000000"
+    }, {
+      "id": "0ce2976a-b2cb-4eb7-b553-a3cc8951af8e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "06886858-d282-4992-8f10-a73054987149",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//p[contains(text(), 'Няма намерени резултати!')]",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
