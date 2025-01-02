@@ -58,7 +58,67 @@
   }, {
     "id": "5f11865a-2ed5-430c-8eda-cabeac5af937",
     "name": "search-with-valid-input-returns-results",
-    "commands": []
+    "commands": [{
+      "id": "68b4c55f-2027-4dfe-a191-ae75f454cba3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d381cb87-edab-4001-8fbe-649678f6f765",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "533b456e-0253-495c-aa2c-5694f7a3a626",
+      "comment": "",
+      "command": "click",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b6b3e3d-509e-45dd-b22f-fc96caac8125",
+      "comment": "",
+      "command": "type",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Нова година"
+    }, {
+      "id": "f7942ead-18d8-43c2-afec-77b9c108aa52",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3afd5c7f-94a7-418e-8c55-61c54a0b0c89",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h3[contains(text(), 'Честита Нова Година')]",
+      "targets": [],
+      "value": ""
+    }]
   }, {
     "id": "0b60b3ae-9c83-4dc2-83a1-a89a983212db",
     "name": "search-with-invalid-input-returns-empty-results",
@@ -122,6 +182,130 @@
       "target": "xpath=//p[contains(text(), 'Няма намерени резултати!')]",
       "targets": [],
       "value": ""
+    }]
+  }, {
+    "id": "5dd19764-a917-4191-bd60-2525fa1dd915",
+    "name": "match-view-contains-details-table",
+    "commands": [{
+      "id": "cb58a6d1-864b-417b-a9ce-2c996e3bd579",
+      "comment": "",
+      "command": "open",
+      "target": "/match",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45d16b28-0b74-4947-8edd-45be8cd78595",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//table[contains(@class, 'single-match table')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a06eda1f-55ba-4ded-8eab-57abd8d1a850",
+    "name": "LoadMoreButtonDisplaysMoreNews",
+    "commands": [{
+      "id": "2352873c-df92-4333-9b4f-28fea4b2e6e6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c31beb87-9996-4964-af83-a6ef2f47c0c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b4216c1-aa7a-448a-927e-acf475a01314",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-31264 > a",
+      "targets": [
+        ["css=#menu-item-31264 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Новини')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-31264']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://levski.bg/novini/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "219196e0-8b03-4774-9f03-294763cc55a7",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc3aaf2f-e157-4fee-b204-724eec8a612b",
+      "comment": "",
+      "command": "click",
+      "target": "id=load-more",
+      "targets": [
+        ["id=load-more", "id"],
+        ["css=#load-more", "css:finder"],
+        ["xpath=//button[@id='load-more']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[8]/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a70d055-6178-442a-b3b9-1ea8e333b7bb",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a50c347-ba08-449b-8f96-9b6dcb67fb66",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.documentElement.scrollHeight",
+      "targets": [],
+      "value": "newsCount"
+    }, {
+      "id": "f6778239-05f6-42f1-8c31-a6c02564024a",
+      "comment": "",
+      "command": "click",
+      "target": "id=load-more",
+      "targets": [
+        ["id=load-more", "id"],
+        ["css=#load-more", "css:finder"],
+        ["xpath=//button[@id='load-more']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[8]/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17014da4-5e90-4e03-893b-fe424f162162",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a5767b8-7e6c-4992-acf3-5c6dee0d41de",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.documentElement.scrollHeight",
+      "targets": [],
+      "value": "newNewsCount"
+    }, {
+      "id": "5179b430-6c15-4cde-bbe9-c21eef6435c8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${newsCount} < ${newNewsCount}",
+      "targets": [],
+      "value": "condition"
+    }, {
+      "id": "becc51bc-e3c1-4028-8204-dcaeda728714",
+      "comment": "",
+      "command": "assert",
+      "target": "condition",
+      "targets": [],
+      "value": "true"
     }]
   }],
   "suites": [{
