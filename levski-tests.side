@@ -1,0 +1,21 @@
+{
+  "id": "2875247b-755e-4e74-bb9e-36fdcf661700",
+  "version": "2.0",
+  "name": "levski-tests",
+  "url": "",
+  "tests": [{
+    "id": "f2b6589b-1e4d-4c4f-9ae0-8c32a31f59c6",
+    "name": "Untitled",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "892b6597-e7a6-4ae0-8245-5d40328bdcf3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f2b6589b-1e4d-4c4f-9ae0-8c32a31f59c6"]
+  }],
+  "urls": [],
+  "plugins": []
+}
