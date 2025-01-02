@@ -2,11 +2,52 @@
   "id": "2875247b-755e-4e74-bb9e-36fdcf661700",
   "version": "2.0",
   "name": "levski-tests",
-  "url": "",
+  "url": "https://levski.bg",
   "tests": [{
     "id": "f2b6589b-1e4d-4c4f-9ae0-8c32a31f59c6",
-    "name": "Untitled",
-    "commands": []
+    "name": "clicking-magazin-opens-store",
+    "commands": [{
+      "id": "8b6af41c-5ead-48ab-a2a1-5ae110ff1429",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec6e62be-0862-4863-9b95-397e8cc16801",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd465d82-6af4-4317-8d20-48a08fc43d24",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-1436 > a",
+      "targets": [
+        ["css=#menu-item-1436 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Магазин')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-1436']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://fanshop.levski.bg/')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64fbdeb2-b92d-439e-a8d7-3230c4cbb38d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "b5b3606e-6342-4731-ad7d-0d551aca41bc",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://fanshop.levski.bg/"
+    }]
   }],
   "suites": [{
     "id": "892b6597-e7a6-4ae0-8245-5d40328bdcf3",
@@ -16,6 +57,6 @@
     "timeout": 300,
     "tests": ["f2b6589b-1e4d-4c4f-9ae0-8c32a31f59c6"]
   }],
-  "urls": [],
+  "urls": ["https://levski.bg/"],
   "plugins": []
 }
