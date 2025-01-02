@@ -4,284 +4,122 @@
   "name": "levski-tests",
   "url": "https://levski.bg",
   "tests": [{
-    "id": "fd4b14ec-ee7e-4cbd-8c61-57916b4ab4f5",
-    "name": "novini-video-is-clickable",
+    "id": "f2b6589b-1e4d-4c4f-9ae0-8c32a31f59c6",
+    "name": "clicking-magazin-opens-store",
     "commands": [{
-      "id": "16295049-f902-4351-84c4-c644a432e0a6",
+      "id": "8b6af41c-5ead-48ab-a2a1-5ae110ff1429",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "363e1e61-f9a9-4665-b52c-d08014ffff1c",
+      "id": "ec6e62be-0862-4863-9b95-397e8cc16801",
       "comment": "",
       "command": "setWindowSize",
-      "target": "694x864",
+      "target": "1294x1080",
       "targets": [],
       "value": ""
     }, {
-      "id": "51dae443-3e8c-4436-a90d-73c91c280478",
+      "id": "cd465d82-6af4-4317-8d20-48a08fc43d24",
       "comment": "",
       "command": "click",
-      "target": "css=.navbar-toggler-icon",
+      "target": "css=#menu-item-1436 > a",
       "targets": [
-        ["css=.navbar-toggler-icon", "css:finder"],
-        ["xpath=//div/button/span", "xpath:position"]
+        ["css=#menu-item-1436 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Магазин')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-1436']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://fanshop.levski.bg/')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "6c2a61f5-f712-497d-8357-2fe2c08370f2",
+      "id": "be47976a-9dbf-4c4c-88a4-cb0c8da083da",
       "comment": "",
-      "command": "click",
-      "target": "css=#menu-header-menu-1 > .menu-item-31264 > a",
-      "targets": [
-        ["css=#menu-header-menu-1 > .menu-item-31264 > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'Новини')])[2]", "xpath:link"],
-        ["xpath=//ul[@id='menu-header-menu-1']/li[2]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'https://levski.bg/novini/')])[2]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
-      ],
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
       "value": ""
     }, {
-      "id": "22b0e546-55bb-40ca-b73c-4815943d957a",
+      "id": "64fbdeb2-b92d-439e-a8d7-3230c4cbb38d",
       "comment": "",
-      "command": "click",
-      "target": "css=.col-12:nth-child(1) > .col .img-fluid",
-      "targets": [
-        ["css=.col-12:nth-child(1) > .col .img-fluid", "css:finder"],
-        ["xpath=//img[@alt='post image']", "xpath:img"],
-        ["xpath=//div[@id='main']/div[6]/div/div/div/div/a/img", "xpath:idRelative"],
-        ["xpath=//div/div/div/div/a/img", "xpath:position"]
-      ],
-      "value": ""
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
     }, {
-      "id": "58da7afc-a960-47f3-85fb-49c6f73c2080",
+      "id": "b5b3606e-6342-4731-ad7d-0d551aca41bc",
       "comment": "",
-      "command": "selectFrame",
-      "target": "index=0",
-      "targets": [
-        ["index=0"]
-      ],
-      "value": ""
-    }, {
-      "id": "f192126c-c2da-498b-9400-4090e3648647",
-      "comment": "",
-      "command": "click",
-      "target": "css=.ytp-large-play-button",
-      "targets": [
-        ["css=.ytp-large-play-button", "css:finder"],
-        ["xpath=//div[@id='movie_player']/div[4]/button", "xpath:idRelative"],
-        ["xpath=//body/div/div/div[4]/button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "e7fc1a6d-c076-4f91-aa7f-2c299aaba696",
-      "comment": "",
-      "command": "click",
-      "target": "css=.ytp-play-button",
-      "targets": [
-        ["css=.ytp-play-button", "css:finder"],
-        ["xpath=//div[@id='movie_player']/div[28]/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div/button", "xpath:position"]
-      ],
-      "value": ""
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://fanshop.levski.bg/"
     }]
   }, {
-    "id": "fd49e188-af22-4af2-b67b-9c1f7ad3426b",
-    "name": "main-menu-pictures-change",
-    "commands": [{
-      "id": "2748e08a-f26b-42b9-85e9-620822e61b3c",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a59c8361-8f5e-4b87-bb89-ca16d50a21dd",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "694x864",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a9154440-1264-4d29-96c6-1770dadf4ddf",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "63cf3897-e3d7-4343-bfc1-aec9e4b280b2",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "2d138cf1-ea41-4d29-a4a0-7ca6705636eb",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "be1f21f3-ffd7-45a6-917d-11a82fdfd3b8",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f2a18677-4009-4ca6-b3da-300cb71703c3",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "17099e23-cb3e-4600-b584-daabdf9b7c4c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f5f75df6-3e74-495d-bca7-469a0d86b42b",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "b7f1f416-983a-44fe-b4f6-93563cd5fb3f",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "4a8f12bc-6255-49b1-962f-af235694747d",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "5321e446-226c-4b7a-9708-ee88ec991d21",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f9ac0b4a-3f08-4594-9aa6-7b4b94a3ecef",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1548cdef-1651-4a9d-b5e0-5425774ccf7d",
-      "comment": "",
-      "command": "click",
-      "target": "css=.swiper-button-prev",
-      "targets": [
-        ["css=.swiper-button-prev", "css:finder"],
-        ["xpath=//div[@id='main']/div[4]/div/div[3]", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[3]", "xpath:position"]
-      ],
-      "value": ""
-    }]
+    "id": "5f11865a-2ed5-430c-8eda-cabeac5af937",
+    "name": "search-with-valid-input-returns-results",
+    "commands": []
   }, {
-    "id": "fb681bf9-5551-4be7-b74f-a152a878d04f",
-    "name": "magazin-opens-shop-link",
+    "id": "0b60b3ae-9c83-4dc2-83a1-a89a983212db",
+    "name": "search-with-invalid-input-returns-empty-results",
     "commands": [{
-      "id": "8e6401e7-b3b0-497c-9606-13573f91773a",
+      "id": "e821af00-91b7-46d8-a2d6-90bc479e2acc",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "0e721cb8-3b80-4894-acab-481d531ee483",
+      "id": "f357285b-915f-4795-81a2-3dc13d326943",
       "comment": "",
       "command": "setWindowSize",
-      "target": "694x864",
+      "target": "1294x1080",
       "targets": [],
       "value": ""
     }, {
-      "id": "af95d0c4-0539-454b-a059-818a552fd366",
+      "id": "f0a4e5f6-8ab4-4feb-a5cf-e9a1784529c8",
       "comment": "",
       "command": "click",
-      "target": "css=.navbar-toggler-icon",
+      "target": "id=is-search-input-32",
       "targets": [
-        ["css=.navbar-toggler-icon", "css:finder"],
-        ["xpath=//div/button/span", "xpath:position"]
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "2115267a-05f6-4a1c-840f-0a18a5bb0d17",
+      "id": "932a9f24-26c4-4188-bf31-61eb7c1f535b",
       "comment": "",
-      "command": "click",
-      "target": "css=#menu-header-menu-1 > .menu-item-1436 > a",
+      "command": "type",
+      "target": "id=is-search-input-32",
       "targets": [
-        ["css=#menu-header-menu-1 > .menu-item-1436 > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'Магазин')])[2]", "xpath:link"],
-        ["xpath=//ul[@id='menu-header-menu-1']/li[8]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'https://fanshop.levski.bg/')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[8]/a", "xpath:position"]
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
       ],
-      "value": ""
+      "value": "00000000000000"
     }, {
-      "id": "46444928-c2fc-4328-a520-75e324f37a47",
+      "id": "0ce2976a-b2cb-4eb7-b553-a3cc8951af8e",
       "comment": "",
-      "command": "close",
-      "target": "",
+      "command": "sendKeys",
+      "target": "id=is-search-input-32",
+      "targets": [
+        ["id=is-search-input-32", "id"],
+        ["name=s", "name"],
+        ["css=#is-search-input-32", "css:finder"],
+        ["xpath=//input[@id='is-search-input-32']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "06886858-d282-4992-8f10-a73054987149",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//p[contains(text(), 'Няма намерени резултати!')]",
       "targets": [],
       "value": ""
     }]
@@ -292,7 +130,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["f2b6589b-1e4d-4c4f-9ae0-8c32a31f59c6"]
   }],
   "urls": ["https://levski.bg/"],
   "plugins": []
