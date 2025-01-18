@@ -1,3 +1,2 @@
-register with inlavid name format  - fails
-register with invalid phone number format - fails
+shop page realoads slowly
 
