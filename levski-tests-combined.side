@@ -92,6 +92,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "5209c593-f2c9-4d80-93f1-f64b30ce542a",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08f8e9c2-7beb-43d7-92ec-bcede05361b3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cc-cart-product-title h4",
+      "targets": [],
+      "value": "Черна памучна риза"
+    }, {
       "id": "aeacaa42-5b2b-4a21-96df-720b60af814e",
       "comment": "",
       "command": "click",
@@ -235,6 +249,20 @@
       ],
       "value": ""
     }, {
+      "id": "88f3b5d5-f58e-4fb4-81fa-bb8cebd159fd",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04da8dd8-19ff-4abf-b6bc-9083bb04c61d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.help-block-error",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "de21d253-c136-40dd-8575-4b961a890585",
       "comment": "",
       "command": "close",
@@ -362,6 +390,27 @@
       "target": "${loopvar}<4",
       "targets": [],
       "value": ""
+    }, {
+      "id": "8ca542bd-2cf8-4eb4-8311-af9560eb2ae9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cc-cart-product-title h4",
+      "targets": [],
+      "value": "Черна памучна риза"
+    }, {
+      "id": "23de9213-40f0-42c1-b67b-2709e73a0451",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e84e5b3e-6b2b-49c3-9733-8b84b029d824",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cc-cart-product-parameter-name",
+      "targets": [],
+      "value": "4 x "
     }, {
       "id": "eeb5750a-e0bb-4daa-845a-7ac7085b3aec",
       "comment": "",
@@ -616,6 +665,20 @@
       ],
       "value": ""
     }, {
+      "id": "c673a29f-420b-4cf0-806c-d35d1fbafe3b",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62dc7415-0485-428c-b951-8815be7a782e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.help-block-error",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b3560633-1052-4719-8d3e-5e68865888e2",
       "comment": "",
       "command": "close",
@@ -845,19 +908,21 @@
       ],
       "value": ""
     }, {
-      "id": "3cf7ed02-8838-4dd7-a8ef-f302be877c45",
+      "id": "09bb8030-199c-4fc5-ab66-f335b284287b",
       "comment": "",
-      "command": "mouseOut",
-      "target": "css=.loading",
-      "targets": [
-        ["css=.loading", "css:finder"],
-        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
-        ["xpath=//form[@id='generated-guid-1']/div[2]/div/div/button", "xpath:idRelative"],
-        ["xpath=//div[16]/div/div[2]/div/div/form/div[2]/div/div/button", "xpath:position"]
-      ],
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
       "value": ""
     }, {
-      "id": "07236167-74f2-478d-a612-f5d4974a7b95",
+      "id": "ec1b8a90-6945-49fb-a1b5-a3eed5357ecc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.help-block-error",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b2262b7-5efd-429a-9347-8119a06559b8",
       "comment": "",
       "command": "click",
       "target": "linkText=Изход",
@@ -870,7 +935,7 @@
       ],
       "value": ""
     }, {
-      "id": "e63c3608-5594-4b2a-9ba8-806a94ec43aa",
+      "id": "0c065f06-4d9b-467f-a726-f38c4b9e15cd",
       "comment": "",
       "command": "close",
       "target": "",
@@ -1087,6 +1152,20 @@
       ],
       "value": ""
     }, {
+      "id": "15919f39-c3de-40ee-b5b6-79dcd2f60af6",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31f8544c-beed-451a-beba-13fda178ee37",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.help-block-error",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "f997b20b-cb39-4ce5-998b-2b947cf700c3",
       "comment": "",
       "command": "close",
@@ -1275,16 +1354,18 @@
       ],
       "value": ""
     }, {
-      "id": "93c20608-7716-4cdd-a459-994d113ad90b",
+      "id": "2360d4b0-ed09-4479-b5b4-c4a947fb1ef0",
       "comment": "",
-      "command": "mouseOut",
-      "target": "css=.loading",
-      "targets": [
-        ["css=.loading", "css:finder"],
-        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
-        ["xpath=//form[@id='generated-guid-1']/div[2]/div/div/button", "xpath:idRelative"],
-        ["xpath=//div[16]/div/div[2]/div/div/form/div[2]/div/div/button", "xpath:position"]
-      ],
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "463764bd-d408-4d8e-a3b8-32fe4c0cce3c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.help-block-error",
+      "targets": [],
       "value": ""
     }, {
       "id": "077721f6-6676-4c97-8403-70b176d6d6c5",
@@ -1410,6 +1491,27 @@
         ["xpath=//a[contains(.,'Премахни')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "d6a8db4b-b8e0-4c44-822a-a26f1c3d9545",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e25d0c2-a847-4868-8216-2d27eca413e0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "0ce89acf-3f20-4094-8684-1d66b85c184d",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://fanshop.levski.bg/"
     }, {
       "id": "efdd6edf-d70e-44e8-8140-dae3c3dd7f52",
       "comment": "",
@@ -2440,6 +2542,13 @@
         ["xpath=//button/span/span", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "cca00fe9-d488-4529-91cd-ee190b183897",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=#contactInfoFirstName",
+      "targets": [],
+      "value": "Ivancho"
     }, {
       "id": "2b0ac2b7-6708-49df-8e31-1ea11247d2f3",
       "comment": "",
